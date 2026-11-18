@@ -1,0 +1,27 @@
+{
+  "paper": "https://arxiv.org/html/2605.22863v2",
+  "heterogeneous_lcfx_extension": "https://arxiv.org/html/2608.20617v1",
+  "reference_code": "https://github.com/thu-nics/C2C",
+  "reference_code_commit": "bdb932aa63637959074a9a6fd59992a4d0d9ad22",
+  "official_lcf_code_found": false,
+  "implementation_basis": [
+    "LCF section 3 and Appendix B/E",
+    "C2C RegularMLP and Gumbel gates",
+    "XKV heterogeneous LCF-X learned layer-axis map"
+  ],
+  "explicit_implementation_choices": [
+    "C2C pre-RMSNorm/GELU/residual FFN x2; architecture reference parameter counts checked by tests",
+    "LCF-X first pool uses one shared key-derived attention distribution for K and V; second pool similarly",
+    "LCF-X layer map is bias-free linear initialized to last_aligned; only unequal depths have this map",
+    "LCF-X deterministic ID-seeded 5+5 evidence partition; full paragraphs only; overlength records explicitly excluded",
+    "Physical microbatch=1, with paper logical-microbatch token weighting and effective batch preserved",
+    "Validation split excludes question/conversation duplicates across train/validation; exact reserved-test matches removed",
+    "No author training weights used; communication modules train from initialization"
+  ],
+  "compute": {
+    "authorized_host": "current machine",
+    "gpu": "auto: any idle GPU with sufficient memory",
+    "concurrency": "One independent experiment per available GPU; all physical GPUs eligible",
+    "insufficient_memory": "wait; do not stop other jobs"
+  }
+}

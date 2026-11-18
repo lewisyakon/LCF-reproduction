@@ -1,0 +1,67 @@
+{
+  "lcf_M1_d128": {
+    "total": 25816056,
+    "components": {
+      "projectors": 25816056
+    },
+    "bf16_deployment_bytes": 51632112,
+    "source_layers": 28,
+    "receiver_layers": 28,
+    "config_sha256": "905be85641884062c66f28120c5dc3959e59550d5e552307fbe0266dfc6e906b"
+  },
+  "lcf_M2_d128": {
+    "total": 33192072,
+    "components": {
+      "projectors": 33192072
+    },
+    "bf16_deployment_bytes": 66384144,
+    "source_layers": 28,
+    "receiver_layers": 36,
+    "config_sha256": "0f91214776f9abab5d223273c245d32d75b9b4dcf9edf911fe622f0a517bfdfe"
+  },
+  "lcf_M3_d128": {
+    "total": 25816056,
+    "components": {
+      "projectors": 25816056
+    },
+    "bf16_deployment_bytes": 51632112,
+    "source_layers": 36,
+    "receiver_layers": 28,
+    "config_sha256": "97c35a99d0d69275032bda8402496d740f2bda6d3100160c090af028a24c933a"
+  },
+  "lcfx_M1_d128": {
+    "total": 25873400,
+    "components": {
+      "projectors": 25816056,
+      "pools": 57344
+    },
+    "bf16_deployment_bytes": 51746800,
+    "source_layers": 28,
+    "receiver_layers": 28,
+    "config_sha256": "d41ff1decf0680060a89a47d98742d73293bbd67c3e3fc579e31e44d85f52575"
+  },
+  "lcfx_M2_d128": {
+    "total": 33250424,
+    "components": {
+      "projectors": 33192072,
+      "pools": 57344,
+      "layer_map": 1008
+    },
+    "bf16_deployment_bytes": 66500848,
+    "source_layers": 28,
+    "receiver_layers": 36,
+    "config_sha256": "632afea6132afcf2e4a34cad186dc8a528e0554a6438dbe5582e0dc91d76953d"
+  },
+  "lcfx_M3_d128": {
+    "total": 25890792,
+    "components": {
+      "projectors": 25816056,
+      "pools": 73728,
+      "layer_map": 1008
+    },
+    "bf16_deployment_bytes": 51781584,
+    "source_layers": 36,
+    "receiver_layers": 28,
+    "config_sha256": "57f2be4723fe5c496e46d0a9a480924e6ff7a95679d1f98e7f7c93111eee5ec5"
+  }
+}

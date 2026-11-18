@@ -1,0 +1,22 @@
+{
+  "method": "lcf",
+  "seed": 42,
+  "raw_candidates": 500000,
+  "filter_counts": {
+    "ok": 498805,
+    "overlength": 1193,
+    "test_exact_overlap": 2
+  },
+  "train": 492548,
+  "validation": 4989,
+  "max_sequence_length": 2048,
+  "effective_batch": 260,
+  "total_optimizer_steps": 300,
+  "dedup_across_train_validation": true,
+  "test_audit": "Exact normalized user/question/prompt SHA256; no semantic or substring audit",
+  "reserved_test_hashes": 8888,
+  "train_ids_sha256": "18713493506f55caa59e17967d62b154e2f5f9a0d90e223d318980be8f526f93",
+  "validation_ids_sha256": "bf44eaea926513d097bdb2fb411897955586560e30e705623401258c7ac6ae0d",
+  "source": "/mnt/nfs/cloud/cache/huggingface/datasets/teknium___open_hermes-2.5/default/0.0.0/b82037821055c377bed0d495e72e46de3bc72e84/open_hermes-2.5-train.arrow",
+  "source_revision": "b82037821055c377bed0d495e72e46de3bc72e84"
+}

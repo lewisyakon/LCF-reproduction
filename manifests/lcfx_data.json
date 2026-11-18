@@ -1,0 +1,22 @@
+{
+  "method": "lcfx",
+  "seed": 0,
+  "raw_candidates": 72991,
+  "filter_counts": {
+    "ok": 72652,
+    "overlength": 111,
+    "invalid": 228
+  },
+  "train": 70617,
+  "validation": 2035,
+  "max_sequence_length": 2048,
+  "effective_batch": 256,
+  "total_optimizer_steps": 276,
+  "dedup_across_train_validation": true,
+  "test_audit": "Exact normalized user/question/prompt SHA256; no semantic or substring audit",
+  "reserved_test_hashes": 8888,
+  "train_ids_sha256": "58ee01ae74b9c98569ee06a922824db7ecfa975aaa611b60d13bdff84225ad6a",
+  "validation_ids_sha256": "1b08c0300ec0f779174fae9cbfa459a12d5ea2aa7553a4468242150ef4e2ebb5",
+  "source": "/mnt/nfs/cloud/Subproblem4UnifiedReproduction/datasets/HotpotQA/distractor",
+  "source_revision": "1908d6afbbead072334abe2965f91bd2709910ab"
+}

@@ -1,0 +1,25 @@
+{
+  "gpu": "auto",
+  "max_concurrent_gpu_jobs": "all",
+  "experiment_order": [
+    "lcf_M1_d128",
+    "lcf_M2_d128",
+    "lcf_M3_d128",
+    "lcfx_M1_d128",
+    "lcfx_M2_d128",
+    "lcfx_M3_d128"
+  ],
+  "cpu_threads": 4,
+  "preprocessing_workers": 2,
+  "physical_microbatch": 1,
+  "automatic_multi_gpu": false,
+  "automatic_concurrency_increase": true,
+  "on_insufficient_memory": "Wait for enough free GPU memory; never stop other users or services",
+  "source": "User requested parallel startup using all available GPUs on 2026-10-21",
+  "gpu_selection": "any_idle_gpu",
+  "max_idle_utilization_percent": 10,
+  "execution_mode": "parallel_independent_experiments",
+  "max_jobs_per_gpu": 1,
+  "gpu_memory_limit": null,
+  "memory_policy": "No per-process GPU memory cap, as requested by the user on 2026-10-22"
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "method": "LCF and LCF-X",
+  "snapshot_date": "2026-11-18",
+  "assets": [
+    {
+      "id": "model_qwen3_0_6b",
+      "kind": "directory",
+      "current_path": "/mnt/hd2/lewis/SwaTReproduction/models/qwen/Qwen3-0.6B",
+      "recommended_path": "models/Qwen3-0.6B",
+      "size_hint": "about 1.5 GiB",
+      "profiles": ["train", "evaluate", "resume"]
+    },
+    {
+      "id": "model_qwen3_1_7b",
+      "kind": "directory",
+      "current_path": "/mnt/hd2/lewis/SwaTReproduction/models/qwen/Qwen3-1.7B",
+      "recommended_path": "models/Qwen3-1.7B",
+      "size_hint": "about 3.5 GiB",
+      "profiles": ["train", "evaluate", "resume"]
+    },
+    {
+      "id": "model_qwen3_4b",
+      "kind": "directory",
+      "current_path": "/mnt/hd2/lewis/SwaTReproduction/models/qwen/Qwen3-4B",
+      "recommended_path": "models/Qwen3-4B",
+      "size_hint": "about 8 GiB",
+      "profiles": ["train", "evaluate", "resume"]
+    },
+    {
+      "id": "prepared_lcf_data",
+      "kind": "directory",
+      "current_path": "/mnt/hd2/lewis/LCFReproduction/data/lcf",
+      "recommended_path": "data/lcf",
+      "size_hint": "1.7 GiB",
+      "profiles": ["train", "resume"]
+    },
+    {
+      "id": "prepared_lcfx_data",
+      "kind": "directory",
+      "current_path": "/mnt/hd2/lewis/LCFReproduction/data/lcfx",
+      "recommended_path": "data/lcfx",
+      "size_hint": "1.7 GiB",
+      "profiles": ["train", "resume"]
+    },
+    {
+      "id": "raw_dataset_cache",
+      "kind": "directory",
+      "current_path": "/mnt/hd2/lewis/Subproblem4UnifiedReproduction/cache",
+      "recommended_path": "cache",
+      "size_hint": "1.6 GiB",
+      "profiles": ["prepare"]
+    },
+    {
+      "id": "raw_dataset_tree",
+      "kind": "directory",
+      "current_path": "/mnt/hd2/lewis/Subproblem4UnifiedReproduction/datasets",
+      "recommended_path": "datasets",
+      "size_hint": "653 MiB",
+      "profiles": ["prepare"]
+    },
+    {
+      "id": "canonical_evaluation_data",
+      "kind": "directory",
+      "current_path": "/mnt/hd2/lewis/Subproblem4UnifiedReproduction/data/canonical/eval",
+      "recommended_path": "data/canonical/eval",
+      "size_hint": "included in the shared canonical data tree",
+      "profiles": ["evaluate"]
+    },
+    {
+      "id": "formal_checkpoints",
+      "kind": "directory",
+      "current_path": "/mnt/hd2/lewis/LCFReproduction/runs/formal",
+      "recommended_path": "runs/formal",
+      "size_hint": "20 GiB",
+      "profiles": ["resume", "evaluate", "results"]
+    },
+    {
+      "id": "formal_evaluations",
+      "kind": "directory",
+      "current_path": "/mnt/hd2/lewis/LCFReproduction/evaluations/unified_stage1_d128",
+      "recommended_path": "evaluations/unified_stage1_d128",
+      "size_hint": "372 MiB",
+      "profiles": ["results"]
+    }
+  ]
+}
+

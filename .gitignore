@@ -1,0 +1,32 @@
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+
+# Rebuildable or machine-local assets.
+/data/
+/models/
+/runs/
+/evaluations/
+/logs/
+/wheels/
+/papers/
+/cache/
+/datasets/
+/tmp/
+
+# Large model/checkpoint formats stay in the external asset bundle.
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.arrow
+*.parquet
+
+.env
+.vscode/
+.idea/
+*.log
+
