@@ -597,6 +597,10 @@ def main() -> None:
     receiver = load_frozen(ROOT / "models" / receiver_name, device, torch.bfloat16)
     adapter = CommunicationAdapter(sender.config, receiver.config, args.method, config["d"], config["dropout"]).to(device)
     checkpoint = ROOT / "runs" / "formal" / config["name"] / "final" / "adapter.safetensors"
+    if not checkpoint.is_file():
+        checkpoint = ROOT / "weights" / args.method / args.pair / "adapter.safetensors"
+    if not checkpoint.is_file():
+        raise FileNotFoundError(checkpoint)
     adapter.load_state_dict(load_file(checkpoint, device=device), strict=True)
     adapter.eval()
     adapter.set_temperature(config.get("total_steps", 300), config.get("total_steps", 300))

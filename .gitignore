@@ -30,3 +30,6 @@ __pycache__/
 .idea/
 *.log
 
+# Final inference adapters are intentionally versioned through Git LFS.
+!weights/**/*.safetensors
+

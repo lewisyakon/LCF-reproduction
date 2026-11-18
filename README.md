@@ -4,6 +4,9 @@
 > remote。源码、正式配置、统一评测入口、提示词归档和结果文档均已纳入；模型、
 > 数据、检查点和逐样本结果按 [`MIGRATION.md`](MIGRATION.md) 中的外部资产清单迁移。
 
+六份完成训练的 final adapter 已通过 Git LFS 纳入 `weights/`。克隆后执行
+`git lfs pull` 即可直接加载；文件校验和和参数量见 `weights/manifest.json`。
+
 本目录对应 `/home/lewis/子问题四_统一复现与变量实验计划.md` 的 E4/E5，训练六份
 `d=128` 通信模块权重。基础模型冻结，权重保存在独立目录，不改写共享资产。
 

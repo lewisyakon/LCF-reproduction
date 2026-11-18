@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-18",
+  "entries": [
+    {
+      "id": "lcf_M1",
+      "method": "lcf",
+      "pair": "M1",
+      "path": "weights/lcf/M1/adapter.safetensors",
+      "parameters": 25816056,
+      "file_bytes": 103314704,
+      "sha256": "cb94b2c631d0e5b5a429d1f51248668f04a09ae5c69f26f646a42e3f7187f3b0",
+      "source_path": "/mnt/hd2/lewis/LCFReproduction/runs/formal/lcf_M1_d128/final/adapter.safetensors",
+      "config": "weights/lcf/M1/config.json",
+      "metrics": "weights/lcf/M1/metrics.json",
+      "load_api": "safetensors.torch.load_file"
+    },
+    {
+      "id": "lcf_M2",
+      "method": "lcf",
+      "pair": "M2",
+      "path": "weights/lcf/M2/adapter.safetensors",
+      "parameters": 33192072,
+      "file_bytes": 132833576,
+      "sha256": "35e70fec5bc988e5f1c200b1a13c536c48a325bee5fdb736a1154873fa4b9d1e",
+      "source_path": "/mnt/hd2/lewis/LCFReproduction/runs/formal/lcf_M2_d128/final/adapter.safetensors",
+      "config": "weights/lcf/M2/config.json",
+      "metrics": "weights/lcf/M2/metrics.json",
+      "load_api": "safetensors.torch.load_file"
+    },
+    {
+      "id": "lcf_M3",
+      "method": "lcf",
+      "pair": "M3",
+      "path": "weights/lcf/M3/adapter.safetensors",
+      "parameters": 25816056,
+      "file_bytes": 103314704,
+      "sha256": "513cb52d593cc86f6d014005d180396b5ac0823090c85a07b232509c1d9fbc01",
+      "source_path": "/mnt/hd2/lewis/LCFReproduction/runs/formal/lcf_M3_d128/final/adapter.safetensors",
+      "config": "weights/lcf/M3/config.json",
+      "metrics": "weights/lcf/M3/metrics.json",
+      "load_api": "safetensors.torch.load_file"
+    },
+    {
+      "id": "lcfx_M1",
+      "method": "lcfx",
+      "pair": "M1",
+      "path": "weights/lcfx/M1/adapter.safetensors",
+      "parameters": 25873400,
+      "file_bytes": 103548592,
+      "sha256": "c5490a1b09de771123366e67fe969afd8d9c074f0a5b21ef94dbb407e100c9e9",
+      "source_path": "/mnt/hd2/lewis/LCFReproduction/runs/formal/lcfx_M1_d128/final/adapter.safetensors",
+      "config": "weights/lcfx/M1/config.json",
+      "metrics": "weights/lcfx/M1/metrics.json",
+      "load_api": "safetensors.torch.load_file"
+    },
+    {
+      "id": "lcfx_M2",
+      "method": "lcfx",
+      "pair": "M2",
+      "path": "weights/lcfx/M2/adapter.safetensors",
+      "parameters": 33250424,
+      "file_bytes": 133071576,
+      "sha256": "86bcdb55458406dd799c76fb2fee8fe6eee6f292fb6fb40bccc781dce2ff7290",
+      "source_path": "/mnt/hd2/lewis/LCFReproduction/runs/formal/lcfx_M2_d128/final/adapter.safetensors",
+      "config": "weights/lcfx/M2/config.json",
+      "metrics": "weights/lcfx/M2/metrics.json",
+      "load_api": "safetensors.torch.load_file"
+    },
+    {
+      "id": "lcfx_M3",
+      "method": "lcfx",
+      "pair": "M3",
+      "path": "weights/lcfx/M3/adapter.safetensors",
+      "parameters": 25890792,
+      "file_bytes": 103619552,
+      "sha256": "b2a2bf3e5bf6c8070dabbf43b45c0668c98531ab84ebb3ca3ebb9735bcc0d447",
+      "source_path": "/mnt/hd2/lewis/LCFReproduction/runs/formal/lcfx_M3_d128/final/adapter.safetensors",
+      "config": "weights/lcfx/M3/config.json",
+      "metrics": "weights/lcfx/M3/metrics.json",
+      "load_api": "safetensors.torch.load_file"
+    }
+  ],
+  "total_file_bytes": 679702704,
+  "excluded": "training_state.pt and intermediate checkpoints"
+}

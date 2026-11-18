@@ -13,8 +13,17 @@ LCF、C2C、Dense 或统一实验仓库。
 - 正式结果、统一实验计划和跨方法对比文档；
 - 当前环境、数据和方法来源 manifest。
 
-模型、Arrow/Parquet 数据、训练检查点和逐样本结果不进入 Git。它们的当前位置、
+六份 final 推理 adapter 已通过 Git LFS 纳入 `weights/`，无需再从旧路径复制。
+模型、Arrow/Parquet 数据、可恢复训练状态和逐样本结果仍不进入 Git；它们的当前位置、
 建议恢复位置、用途和体积记录在 `migration/external_assets.json`。
+
+克隆后先运行：
+
+```bash
+git lfs install
+git lfs pull
+python tools/verify_included_weights.py
+```
 
 ## 迁移前检查
 
@@ -28,6 +37,9 @@ python tools/verify_external_assets.py --mode current --profile results
 ```bash
 bash tools/create_code_bundle.sh /path/to/export
 ```
+
+Git bundle 只包含 LFS 指针，不包含权重实体；完整离线迁移还需复制 `weights/`，
+或者在有网络时从 GitHub 执行 `git lfs pull`。
 
 资产应按 manifest 的 `current_path` 复制到新仓库下的 `recommended_path`。建议用
 `rsync -aH --info=progress2`，不要把大文件提交到 Git。恢复后检查：

@@ -1,0 +1,14 @@
+{
+  "step": 276,
+  "train_loss": 1.1016383133395633,
+  "grad_norm": 1.284255862236023,
+  "lr": 0.0,
+  "seconds": 102.30031661782414,
+  "examples": 70617,
+  "time": "2026-10-22T02:45:41.926578+08:00",
+  "peak_allocated_bytes": 11672364544,
+  "validation_loss": 0.9204437549109284,
+  "validation_items": 2035,
+  "validation_em": 0.4176904176904177,
+  "validation_f1": 0.48225713952986676
+}
